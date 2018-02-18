@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">尝新</string>
+    <string name="open" >dakai</string>
+    <string name="close" >guanbi</string>
+    <string name="iv_tv">图文\n详情</string>
+    <string name="add_address">⊕新增地址</string>
+</resources>

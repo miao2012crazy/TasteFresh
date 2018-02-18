@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_6"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_15">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_6"
+        android:paddingTop="@dimen/dp_6">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_6"
+            android:paddingTop="@dimen/dp_6">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="试用押金："
+                android:textColor="#222"
+                android:textSize="@dimen/sp_13" />
+            <TextView
+                android:id="@+id/tv_deposit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="59"
+                android:textColor="#FE0000"
+                android:textSize="@dimen/sp_17" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 元"
+                android:textColor="#222"
+                android:textSize="@dimen/sp_13" />
+
+            <TextView
+                android:id="@+id/tv_product_origin_price"
+                android:layout_marginStart="@dimen/dp_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原价：588元"
+                android:textColor="#888"
+                android:textSize="@dimen/sp_10" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_refund"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="自签收后14个自然日内填写测评报告,可退59元"
+            android:textColor="#333"
+            android:textSize="@dimen/sp_10" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_tryout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_34"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_tryout"
+            android:text="立即试用"
+            android:textColor="#fff" />
+
+
+    </RelativeLayout>
+</LinearLayout>

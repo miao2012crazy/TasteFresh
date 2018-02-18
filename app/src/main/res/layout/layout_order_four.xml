@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/shape_report_item"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dp_8"
+    android:layout_width="match_parent"
+    android:elevation="@dimen/dp_1"
+    android:layout_height="@dimen/dp_133"
+    >
+
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_product_order"
+            android:layout_width="@dimen/dp_113"
+            android:layout_height="@dimen/dp_113"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_5"
+            android:background="@mipmap/detail_example" />
+
+        <TextView
+            android:id="@+id/tv_commit_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_product_name"
+            android:layout_alignTop="@+id/iv_product_order"
+            android:layout_marginTop="11dp"
+            android:text="提交日期：2017-12-08"
+            android:textColor="#666"
+            android:textSize="@dimen/sp_11" />
+
+        <ImageView
+            android:layout_marginEnd="@dimen/dp_6"
+            android:id="@+id/iv_state"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"
+            android:layout_alignBottom="@+id/tv_order_state"
+            android:layout_toStartOf="@+id/tv_order_state"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_commit_date"
+            android:layout_alignBottom="@+id/tv_commit_date"
+            android:layout_alignEnd="@+id/tv_product_name"
+            android:drawablePadding="@dimen/dp_4"
+            android:text="审核中"
+            android:textColor="#666"
+            android:textSize="@dimen/sp_11" />
+
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_product_order"
+            android:lineSpacingExtra="@dimen/dp_3"
+            android:maxLines="2"
+            android:text="我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题"
+            android:textColor="#222"
+            android:textSize="@dimen/sp_13" />
+
+
+        <TextView
+            android:id="@+id/tv_refund"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_product_order"
+            android:layout_alignEnd="@+id/tv_product_name"
+            android:layout_alignStart="@+id/tv_product_name"
+            android:lineSpacingExtra="@dimen/dp_3"
+            android:maxLines="2"
+            android:text="正在审核测评报告是否符合标准"
+            android:textColor="#999"
+            android:textSize="@dimen/sp_10" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="#fff"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+<TextView
+    android:id="@+id/tv_product_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_15"
+    android:text="title"
+    android:maxLines="1"
+    android:textColor="#222222"
+    android:textSize="@dimen/sp_15"
+    android:textStyle="bold" />
+
+<TextView
+    android:layout_marginBottom="@dimen/dp_15"
+    android:lineSpacingExtra="@dimen/dp_4"
+    android:padding="@dimen/dp_10"
+    android:background="@drawable/shape_product_desc"
+    android:id="@+id/tv_product_desc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dp_15"
+    android:layout_marginStart="@dimen/dp_15"
+    android:text="文字在语言学中指书面语等人们意思表达的视觉形式，古代把独体字叫做“文”，把合体字叫做“字”，如今联合起来叫做“文字”，文字的基本个体叫做“字”。在日常生活中，“文字”还可以指书面语、语言、文章、字等。视觉符号形式，突破口语的时间和空间限制。例如汉字、拉丁字母。"
+    android:textColor="#222222"
+    android:textSize="@dimen/sp_9" />
+</LinearLayout>

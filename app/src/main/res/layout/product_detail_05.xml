@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/dp_6"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_15">
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_6"
+        android:paddingTop="@dimen/dp_6">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_product_num"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="限量1000件,已抢568件"
+                android:textColor="#222"
+                android:textSize="@dimen/sp_13" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dp_4"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_hour"
+                    style="@style/time_style"
+                    android:layout_marginStart="@dimen/dp_6"
+                    android:background="@drawable/shape_time_hour" />
+
+                <TextView style="@style/time_interval" />
+
+                <TextView
+                    android:id="@+id/tv_minute"
+                    style="@style/time_style"
+                    android:background="@drawable/shape_time_hour" />
+
+                <TextView style="@style/time_interval" />
+
+                <TextView
+                    android:id="@+id/tv_second"
+                    style="@style/time_style"
+                    android:background="@drawable/shape_time_overplus" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="11"
+        android:progressDrawable="@drawable/progress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_6" />
+</LinearLayout>

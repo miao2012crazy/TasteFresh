@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#000"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_detail" />
+
+    <ScrollView
+        android:background="#f5f5f5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_product_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_233"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/detail_example" />
+
+                <ImageView
+                    android:id="@+id/iv_look_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:background="@mipmap/iv_tv"
+                     />
+            </FrameLayout>
+
+            <include layout="@layout/product_detail_01" />
+
+            <include layout="@layout/product_detail_05" />
+
+            <include layout="@layout/product_detail_02" />
+
+            <include layout="@layout/product_detail_03" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#e5e5e5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="下周测评产品预告" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#e5e5e5" />
+            </LinearLayout>
+            <include layout="@layout/product_detail_04" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

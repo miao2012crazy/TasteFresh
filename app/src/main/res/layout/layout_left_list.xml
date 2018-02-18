@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dp_243"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@drawable/left_bg_top"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_123">
+        <ImageView
+            android:id="@+id/iv_user_head_img"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:src="@drawable/user_default"
+            android:scaleType="fitXY"
+            android:layout_width="@dimen/dp_78"
+            android:layout_height="78dp" />
+        <TextView
+            android:id="@+id/tv_user_nick_name"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp_13"
+            android:layout_toEndOf="@+id/iv_user_head_img"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:text="用户昵称"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+    <TextView
+        android:background="#25272c"
+        android:elevation="@dimen/dp_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_4" />
+    <android.support.v7.widget.RecyclerView
+        android:background="@drawable/left_bg_bottom"
+        android:id="@+id/recycler_left"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_72"
+    android:orientation="vertical"
+    android:id="@+id/ll_tag"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_image_head"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@mipmap/user_example"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50" />
+    <TextView
+        android:id="@+id/tv_nick_name"
+        android:padding="@dimen/dp_5"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="销售部"
+        android:textSize="@dimen/sp_11"
+        android:textColor="#333"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_user_tag"
+        android:paddingStart="@dimen/dp_5"
+        android:paddingEnd="@dimen/dp_5"
+        android:text="美妆达人爱上了开机的爱是考虑到奥斯卡级华会计师"
+        android:maxLines="2"
+        android:textSize="@dimen/sp_7"
+        android:textColor="#777"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

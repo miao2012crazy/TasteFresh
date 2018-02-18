@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_14"
+    android:orientation="vertical">
+    <TextView
+        android:background="#fff"
+        android:paddingStart="@dimen/dp_15"
+        android:textColor="#222"
+        android:textSize="@dimen/sp_15"
+        android:gravity="center_vertical"
+        android:text="选择支付方式"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40" />
+
+    <RadioGroup
+        android:id="@+id/rg_group_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_1"
+        android:orientation="vertical"
+        >
+
+        <RadioButton
+            style="@style/rb_btn"
+            android:id="@+id/rb_wechat_pay"
+            android:drawableStart="@mipmap/ic_wechat"
+            android:text="微信支付" />
+
+        <RadioButton
+            style="@style/rb_btn"
+            android:id="@+id/rb_ali_pay"
+            android:drawableStart="@mipmap/ic_alipay"
+            android:text="支付宝支付" />
+
+        <RadioButton
+            style="@style/rb_btn"
+            android:id="@+id/rb_bank_pay"
+            android:drawableStart="@mipmap/ic_bank_pay"
+            android:text="银行卡?支付" />
+    </RadioGroup>
+</LinearLayout>

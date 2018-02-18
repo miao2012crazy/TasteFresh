@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xialan.tastefresh">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- iBeancon功能所需权限 -->;
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- 个推3.0电子围栏功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <application
+        tools:replace="android:theme"
+        android:name=".applaction.MyApplaction"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/custom_style_app">
+        <activity android:name=".MainActivity" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".view.login.LoginChildActivity"/>
+        <activity android:name=".view.login.RegeditChildActivity"/>
+        <activity android:name=".view.ProductDetailActivity"/>
+        <activity android:name=".view.CommitReportListActvity"/>
+        <activity android:name=".view.CommitReportActivity" android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".view.CommitReportExperienceActivity" android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".view.InvestigationActivity"  />
+        <activity android:name=".view.LastWeekProductActivity"  />
+        <activity android:name=".view.QuarterProductActivity"  />
+        <activity android:name=".view.ProductListActivity"  />
+        <activity android:name=".view.YearProductActivity"  />
+        <activity android:name=".view.UserCenterActivity"  />
+        <activity android:name=".view.UserInfoActivity"  />
+        <activity android:name=".view.AddressActivity"  />
+        <activity android:name=".view.UpdateAddressActivty"  />
+        <activity android:name=".view.UpdatePsdActivity"  />
+        <activity android:name=".view.SettingActivity"  />
+        <activity android:name=".view.ReportDetailActivity"  />
+        <activity android:name=".view.SelectAddressActivity"  />
+        <activity android:name=".view.ConfirmOrderActivity" android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".view.UserOrderActivity" />
+
+
+        <!-- 个推SDK配置结束 -->
+        <service
+            android:name=".service.CustomPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice">
+        </service>
+        <service android:name=".service.CustomIntentService"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/shape_report_item"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp_8"
+    android:layout_height="@dimen/dp_67"
+   >
+    <ImageView
+        android:background="@mipmap/detail_example"
+        android:id="@+id/iv_product_report"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/dp_57"
+        android:layout_height="@dimen/dp_57" />
+
+    <TextView
+        android:layout_marginEnd="@dimen/dp_10"
+        android:id="@+id/tv_report_product_name"
+        android:text="我是标题"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_toEndOf="@+id/iv_product_report"
+        android:textColor="#222"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_report_comment"
+        android:drawablePadding="@dimen/dp_4"
+        android:gravity="center"
+        android:drawableLeft="@mipmap/ic_message_report"
+        android:textColor="#888"
+        android:textSize="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_6"
+        android:layout_marginBottom="@dimen/dp_6"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

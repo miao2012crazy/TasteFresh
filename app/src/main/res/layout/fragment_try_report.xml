@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_product_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_233"
+            android:scaleType="fitXY"
+            android:src="@mipmap/detail_example" />
+
+        <ImageView
+            android:id="@+id/iv_look_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@mipmap/iv_tv"
+            />
+    </FrameLayout>
+
+    <include layout="@layout/product_detail_01" />
+
+    <!--用户 反馈统计扇形图-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#f00"
+        android:text="马术队"
+        android:gravity="center"/>
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="custom_style_app" parent="AppTheme">
+
+    </style>
+    <!--倒计时样式-->
+    <style name="time_style">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:paddingStart">@dimen/dp_4</item>
+        <item name="android:paddingEnd">@dimen/dp_4</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dp_17</item>
+    </style>
+    <!--时间中间的:-->
+    <style name="time_interval">
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:textColor">#b8b8b8</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dp_17</item>
+        <item name="android:text">：</item>
+    </style>
+
+    <style name="et_login_style" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+
+    </style>
+
+    <style name="fiveRatingBar" parent="Widget.MaterialRatingBar.RatingBar">
+        <item name="android:progressDrawable">@drawable/five_rating_bar</item>
+        <item name="android:maxHeight">@dimen/dp_23</item>
+        <item name="android:minHeight">@dimen/dp_23</item>
+        <item name="android:drawablePadding">@dimen/dp_4</item>
+    </style>
+
+    <style name="rb_btn">
+        <item name="android:textColor">#222</item>
+        <item name="android:background">#fff</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_50</item>
+        <item name="android:button">@drawable/selector_rb</item>
+        <item name="android:drawablePadding">@dimen/dp_8</item>
+        <item name="android:paddingStart">@dimen/dp_10</item>
+    </style>
+
+
+    <color name="white">#fff</color>
+</resources>
